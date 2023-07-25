@@ -1,0 +1,31 @@
+{
+    "Fish": [
+      { "name": "Rohu", "price": 300,"quantity" : 0, "wt" : 0, "img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" },
+      { "name": "Katla", "price": 450,"quantity" : 0, "wt" : 0,"img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" },
+      { "name": "Pompret", "price": 800,"quantity" : 0, "wt" : 0,"img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" },
+      { "name": "Salmon", "price": 2400,"quantity" : 0, "wt" : 0, "img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" },
+      { "name": "Hilsa", "price": 1200,"quantity" : 0, "wt" : 0, "img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" }
+    ],
+    "Meat": [
+      { "name": "Chicken", "price": 150,"quantity" : 0, "wt" : 0, "img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" },
+      { "name": "Lamb", "price": 1000,"quantity" : 0, "wt" : 0, "img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" },
+      { "name": "Mutton", "price": 800,"quantity" : 0, "wt" : 0, "img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" },
+      { "name": "Duck", "price": 900,"quantity" : 0, "wt" : 0, "img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" },
+      { "name": "Rabbit", "price": 900,"quantity" : 0, "wt" : 0, "img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" }
+    ],
+    "Fruits": [
+      { "name": "Apple", "price": 120,"quantity" : 0, "wt" : 0, "img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" },
+      { "name": "Orange", "price": 80,"quantity" : 0, "wt" : 0, "img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" },
+      { "name": "Banana", "price": 20,"quantity" : 0, "wt" : 0, "img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" },
+      { "name": "Watermelon", "price": 30,"quantity" : 0, "wt" : 0, "img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" },
+      { "name": "Mango", "price": 140,"quantity" : 0, "wt" : 0, "img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" }
+    ],
+    "Veggies": [
+      { "name": "Spinach", "price": 45,"quantity" : 0, "wt" : 0, "img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" },
+      { "name": "Brinjal", "price": 60,"quantity" : 0, "wt" : 0, "img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" },
+      { "name": "Potato", "price": 25,"quantity" : 0, "wt" : 0, "img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" },
+      { "name": "Cucumber", "price": 40,"quantity" : 0, "wt" : 0, "img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" },
+      { "name": "BottleGourd", "price": 30,"quantity" : 0, "wt" : 0, "img" : "https://images.unsplash.com/photo-1618120995338-f1344edc054a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" }
+    ]
+  }
+  

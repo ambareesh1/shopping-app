@@ -1,0 +1,105 @@
+<div class="container mt-2">
+
+  <div class="row">
+    <div class="col-lg-2">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">
+                    Category
+                </div>
+                <div class="card-body">
+                    <ul class="list-group" *ngFor="let category of categories">
+                        <li class="list-group-item" (click)="onItemClick(category)">{{category}}</li>
+                       
+                      </ul>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <div class="col-lg-9">
+          <div class="row">
+            <h2>{{initialItem}}</h2>
+            <div *ngFor="let item of itemsData[initialItem]" class="card  m-2" style="width: 18rem;">
+                <img [src]="item.img" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.name}}</h5>
+                </div>
+                <div class="card-footer">
+                    
+                    <div class="btn-group" role="group" aria-label="Quantity Buttons">
+                        <button type="button" class="btn btn-primary" (click)="onQuantityChange('add', item)">+</button>
+                        <h3 class="ps-5 pe-5"> {{ item.quantity }}</h3>
+                        <button type="button" class="btn btn-danger" (click)="onQuantityChange('subtract', item)">-</button>
+                      </div>
+                </div>
+              </div>
+          </div>
+    </div>
+    <div class="col-lg-1">
+   <h2>cart</h2>
+    </div>
+
+  </div>
+
+    <!-- <div class="row">
+      <div class="col">
+        <h2 class="mb-4">Shopping List</h2>
+      </div>
+    </div>
+    <div class="row">
+      <ng-container *ngFor="let category of categories">
+        <div class="col-md-3">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">{{ category }}</h5>
+              <div *ngFor="let item of itemsData[category]">
+                <div class="form-check">
+                    <img [src]="item.img" height="60" width="60">
+
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    [attr.id]="item.name"
+                    (change)="onItemChange(item, category)"
+                    [disabled]="item.selected && selectedItems[category].length === 3"
+                  />
+                  <label class="form-check-label" [attr.for]="item.name">
+                    {{ item.name }} (Rs {{ item.price }}/kg)
+                  </label>
+                </div>
+              </div>
+              <div *ngIf="selectedItems[category].length < 2" class="error-msg">
+                Please select at least 2 items from {{ category }}
+              </div>
+              <div *ngIf="selectedItems[category].length === 3" class="error-msg">
+                You can select a maximum of 3 items from {{ category }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div> -->
+    <div class="modal" id="myModal" [ngClass]="showModalPopUp ? 'd-block' : 'd-none'">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              Modal body..
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="onClose()" >Close</button>
+            </div>
+      
+          </div>
+  </div>
+  
