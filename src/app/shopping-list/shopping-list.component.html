@@ -7,37 +7,79 @@
                 <div class="card-title">
                     Category
                 </div>
-                <div class="card-body">
-                    <ul class="list-group" *ngFor="let category of categories">
-                        <li class="list-group-item" (click)="onItemClick(category)">{{category}}</li>
-                       
-                      </ul>
-                </div>
+                <div class="">
+                    <ul class="list-group">
+                      <li class="list-group-item"
+                          *ngFor="let category of categories"
+                          [class.active]="initialItem === category"
+                          (click)="onItemClick(category)">
+                        {{ category }}
+                      </li>
+                    </ul>
+                  </div>
             </div>
     
         </div>
     </div>
-    <div class="col-lg-9">
+    <div class="col-lg-6">
           <div class="row">
             <h2>{{initialItem}}</h2>
-            <div *ngFor="let item of itemsData[initialItem]" class="card  m-2" style="width: 18rem;">
+            <div *ngFor="let item of itemsData[initialItem]" class="card  m-2" style="width: 12rem;">
                 <img [src]="item.img" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{item.name}}</h5>
+                    <h6 class="card-title">{{item.price}} / Kg</h6>
                 </div>
                 <div class="card-footer">
                     
                     <div class="btn-group" role="group" aria-label="Quantity Buttons">
-                        <button type="button" class="btn btn-primary" (click)="onQuantityChange('add', item)">+</button>
-                        <h3 class="ps-5 pe-5"> {{ item.quantity }}</h3>
                         <button type="button" class="btn btn-danger" (click)="onQuantityChange('subtract', item)">-</button>
+                        <h4 class="ps-3 pe-3"> {{ item.quantity }}</h4>
+                        <button type="button" class="btn btn-success" (click)="onQuantityChange('add', item)">+</button>
                       </div>
                 </div>
               </div>
           </div>
     </div>
-    <div class="col-lg-1">
+    <div class="col-lg-3">
+        <div class="shadow-sm p-2 bg-body rounded">
    <h2>cart</h2>
+   <span>Total Amount : {{totalAvailableAmount }} </span> <p>Balance Amount : {{remainingAmount}}</p>
+   <div class="container mt-4">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <!-- <th>Category</th> -->
+          <th>Selected Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let category of getSelectedCategories()">
+          <ng-container *ngFor="let item of getGroupedItemsForCategory(category)">
+            <tr>
+              <!-- <td>{{  this.selectedItems[category][0].category }}</td> -->
+              <td>{{ item.name }}</td>
+              <td>{{ item.quantity }} kg X {{item.price}}</td>
+              <td>Rs {{ item.price * item.quantity }}</td>
+            </tr>
+          </ng-container>
+        </ng-container>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2" class="text-end"><strong>Total:</strong></td>
+          <td><strong>Rs {{ totalAmount }}</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  
+  <button class="btn btn-success" (click)="onCheckOut()"> Check Out</button>
+  
+</div>
+  
     </div>
 
   </div>
@@ -85,16 +127,13 @@
           <div class="modal-content">
       
             <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Modal Heading</h4>
+            <div class="modal-header btn-group bg-warning">
+              <h4 class="modal-title"> {{modelMessage}}</h4>
               <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
             </div>
       
             <!-- Modal body -->
-            <div class="modal-body">
-              Modal body..
-            </div>
-      
+          
             <!-- Modal footer -->
             <div class="modal-footer">
               <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="onClose()" >Close</button>

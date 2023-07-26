@@ -1,0 +1,5 @@
+.list-group-item.active {
+    background-color: #007bff; /* Use your desired background color here */
+    color: #fff; /* Use your desired text color here */
+    cursor: pointer; /* Add this to indicate that the item is clickable */
+  }
